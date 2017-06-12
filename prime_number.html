@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+<script>
+var n=Number(prompt("n")),
+    m=Number(prompt("m"));
+if ((n>0)&&(m>0)&&(n<m)) {
+  while(n<m) {
+    var temp=n,k=2,
+        count=0;
+    while(k<temp) {
+        if (temp%k===0) {
+        count++;
+        k++;
+        } else {
+        k++;
+    }   
+    }
+  if (count===0) {
+    console.log("Yes");
+    break;
+  }
+    n++;
+  }
+}else {
+  console.log("Re-enter n and m");
+}
+</script>
+
+</body>
+
+</html>
